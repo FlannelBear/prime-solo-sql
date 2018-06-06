@@ -26,6 +26,8 @@ SELECT username, account_balance FROM accounts ORDER BY account_balance ASC LIMI
 
 -- Get all users with account balances that are more than $100.
 
+SELECT * FROM accounts WHERE account_balance > 100;
+
 -- Add a new record.
 
 -- The bank is losing money in Miami and Phoenix and needs to unload low transaction customers: 
