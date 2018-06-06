@@ -22,6 +22,8 @@ SELECT username, account_balance FROM accounts ORDER BY account_balance DESC LIM
 
 -- Get the username and account balance of the 3 users with the lowest balances, sort lowest to highest balance.
 
+SELECT username, account_balance FROM accounts ORDER BY account_balance ASC LIMIT 3;
+
 -- Get all users with account balances that are more than $100.
 
 -- Add a new record.
