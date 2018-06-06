@@ -30,5 +30,11 @@ SELECT * FROM accounts WHERE account_balance > 100;
 
 -- Add a new record.
 
+INSERT INTO accounts(username, city, transactions_completed, transactions_attempted, account_balance)
+VALUES
+('Josh', 'Minneapolis', 0, 0, 0.00);
+
 -- The bank is losing money in Miami and Phoenix and needs to unload low transaction customers: 
 -- Delete users that reside in miami OR phoenix and have completed fewer than 5 transactions.
+
+DELETE FROM accounts WHERE city = 'miami' OR city = 'phoenix' AND transactions_completed < 5;
